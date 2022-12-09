@@ -10,9 +10,7 @@ form.addEventListener("submit", (e) => {
 
   checkInputs();
   if (Pass()) {
-    location.replace(
-      "file:///media/kali/4054D80F54D80994/WorkSpace/Web%20Project/JOB/success.html"
-    );
+    location.replace("https://altarek1.github.io/Job/success.html");
   }
 });
 function Pass() {
@@ -20,7 +18,6 @@ function Pass() {
   const emailValue = email.value.trim();
   const passwordValue = password.value.trim();
   const password2Value = password2.value.trim();
-  localStorage.removeItem("User");
   localStorage.setItem("User", emailValue);
   return (
     usernameValue.match(regex) &&
