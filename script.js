@@ -10,6 +10,24 @@ form.addEventListener("submit", (e) => {
 
   checkInputs();
   if (Pass()) {
+    const data = {
+      UserName: username.value.trim(),
+      Email: email.value.trim,
+      password: password.value.trim(),
+      password_confirmation: password2.value.trim(),
+    };
+    fetch("https://reqres.in/api/users", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+      })
+      .catch((err) => console.log(err));
     location.replace("https://altarek1.github.io/Job/success.html");
   }
 });
