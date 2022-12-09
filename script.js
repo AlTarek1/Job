@@ -28,7 +28,7 @@ form.addEventListener("submit", (e) => {
         console.log(data);
       })
       .catch((err) => console.log(err));
-    location.replace("https://altarek1.github.io/Job/success.html");
+    location.replace("success.html");
   }
 });
 function Pass() {
