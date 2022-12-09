@@ -16,7 +16,7 @@ form.addEventListener("submit", (e) => {
       password: password.value.trim(),
       password_confirmation: password2.value.trim(),
     };
-    fetch("https://reqres.in/api/users", {
+    fetch("https://goldblv.com/api/hiring/tasks/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
